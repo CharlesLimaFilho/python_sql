@@ -32,7 +32,7 @@ def finish(cursor, db):
     cursor.close()
     db.close()
 
-mycursor, mydb = connect_to_db("localhost", "charles", "123456", "ingressos")
+mycursor, mydb = connect_to_db("", "", "", "ingressos")
 options_text = ["\nDigite a tabela desejada: \n[1] - Cliente\n[2] - Endereco\n[3] - Ingresso\n[4] - Evento\n[5] - Setor\n[6] - Tipos de ingressos\n[7] - Outra operacoes\n[0] - Sair\n-> ",
                 "\nDigite a opção desejada: \n[1] - Inserir\n[2] - Consultar\n[3] - Atualizar\n[4] - Excluir\n[0] - Retornar\n-> ",
                 "\nDigite a opção desejada: \n[1] - Consulta unica\n[2] - Consultar todos\n-> "]
